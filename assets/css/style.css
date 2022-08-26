@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 60px;
+    background-color: yellowgreen;
+
+}
+nav span{
+    width: 60px;
+    height: 60px;
+    background-color: tomato;
+    font-size: 30px;
+    color: #000;
+    margin: 0 30px;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    cursor: pointer;
+}
+.sidbar{
+    width: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: calc(100vh - 60px);
+    padding: 20px 40px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+.sidbar h2{
+    font-family: sans-serif;
+}
+.sidbar p{
+    padding-top: 30px;
+    font-family: arial;
+    line-height: 30px;
+    font-size: 20px;
+}
+.activeSidbar{
+    transform: scaleX(1);
+}
